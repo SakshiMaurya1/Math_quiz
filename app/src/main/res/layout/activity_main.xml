@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bgprototype"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:padding="20dp"
+        android:textColor="@color/dblue"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/tvshape"
+        android:textSize="30dp" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/mic"
+        android:layout_marginHorizontal="10dp"
+        android:src="@drawable/mic1"
+        android:layout_marginTop="70dp"
+        android:layout_below="@+id/question"
+        android:layout_toRightOf="@+id/say" />
+
+    <Button
+        android:id="@+id/say"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/question"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/buttonbg"
+        android:text="Say Question" />
+
+    <TextView
+        android:id="@+id/answer"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingTop="5dp"
+        android:paddingLeft="5dp"
+        android:textColor="@color/dblue"
+        android:textColorHint="@color/dblue"
+        android:layout_below="@+id/say"
+        android:background="@drawable/tvshape"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="40dp"
+        android:hint="Your answer here"
+        />
+
+
+<!--    <Button-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/next"-->
+<!--        android:text="next"-->
+<!--        android:background="@drawable/buttonbg"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        android:layout_marginBottom="50dp"-->
+<!--        android:layout_marginRight="50dp"/>-->
+
+<!--    <Button-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/prev"-->
+<!--        android:text="previous"-->
+<!--        android:background="@drawable/buttonbg"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_alignParentLeft="true"-->
+<!--        android:layout_marginBottom="50dp"-->
+<!--        android:layout_marginLeft="50dp"/>-->
+
+
+</RelativeLayout>
